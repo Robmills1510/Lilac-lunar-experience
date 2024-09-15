@@ -27,7 +27,17 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+
+.arrow-icon {
+    position: fixed;
+    top: 20px;  /* Adjust to position above or near the hamburger */ 
+    right: -70px;
+    width: 450px; /* Adjust width of the arrow */
+    height: auto;
+    z-index: 500;
+}
+
+
 h1{
     font-family: "Ribeye Marrow", serif;
     font-size: 5rem; /* Adjust size as needed */
@@ -94,6 +104,7 @@ height: 100vh;
     border: 1px solid black; /* Optional: border color */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: shadow for better visibility */
     width: 200px; /* Adjust width as needed */
+    z-index: 999;
 }
 .nav-menu li {
     padding: 10px;
@@ -107,6 +118,12 @@ height: 100vh;
 .menu-active .nav-menu {
     display: block;
 }
+
+/* this code is so that when the menu is activated the arrow icon doesnt work */
+.menu-active .arrow-icon{
+    display: none;
+}
+
 .menu-active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
