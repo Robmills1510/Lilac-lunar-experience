@@ -35,6 +35,9 @@ body{
     text-decoration: none;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
+.pill:hover{
+    transform: scale(1.05);
+}
 
 .red-pill {
     font-family: "Ribeye Marrow", serif;
