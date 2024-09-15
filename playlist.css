@@ -26,19 +26,6 @@ body{
     background-position: center;
 }
 
-/* Music page background */
-.music-page {
-    background-image: url('background-music-page.jpg'); /* Add your background image */
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 /* Container for the content */
 .container {
     padding: 20px;
@@ -57,13 +44,9 @@ h1 {
 /* Paragraph styling */
 h3{
     font-family: "Ribeye Marrow", serif;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 40px;
+    font-size: 1.4rem; /* Adjust size as needed */
+    color: white;
+    text-align: center;
 }
 
 /* Playlist section */
