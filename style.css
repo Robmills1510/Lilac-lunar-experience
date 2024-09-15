@@ -1,5 +1,5 @@
-/* this is the code to get the background for the website */
-body{
+/* this is the code to get the background for the websites index page */
+.index{
     background-image: url("photos/wallpaper1.jpg");
     background-repeat: no-repeat;
      background-position: center;
@@ -8,6 +8,18 @@ body{
      justify-content: center;
      align-items: center; 
      margin: 0;
+}
+
+/* this code is to get the background for the playlist page */
+.playlist{
+    background-image: url(photos/wallpaper2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 /* this code is to import the correct font  */
 .ribeye-marrow-regular {
