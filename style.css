@@ -1,10 +1,15 @@
+/* this is the code to get the background for the website */
 body{
     background-image: url("photos/wallpaper1.jpg");
     background-repeat: no-repeat;
      background-position: center;
      background-attachment: fixed;
      background-size: cover;
+     justify-content: center;
+     align-items: center; 
+     margin: 0;
 }
+/* this code is to import the correct font  */
 .ribeye-marrow-regular {
     font-family: "Ribeye Marrow", serif;
     font-weight: 400;
@@ -12,11 +17,33 @@ body{
   }
   
 h1{
-    color: white;
     font-family: "Ribeye Marrow", serif;
+    font-size: 5rem; /* Adjust size as needed */
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85); /* Black background with some transparency */
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Optional shadow effect */
+    font-weight: normal;
+    display: inline-block;
 }
 
 h3{
-    color: white;
     font-family: "Ribeye Marrow", serif;
+    font-size: 1.2rem; /* Adjust size as needed */
+    color: black;
+    text-align: center;
+    background-color: white; /* White background for the paragraph */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+    margin-top: 20px;
+}
+
+/* this code is to align the div to the center of the page, so the writing is in the correct position */
+.container{
+text-align: center;
+position: relative;
 }
