@@ -2,18 +2,20 @@ body{
     background-image: url(photos/About\ us\ background\ \(1\).jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; 
     background-size: cover;
     justify-content: center;
     align-items: center;
     margin: 0;
+    display:grid;
+    place-items: center;
 }
 
 h1{
     text-align:center;
     color:white;
     font-family: "Ribeye Marrow", serif;
-    margin-top:50px;
+    margin-top:30px;
     font-size: 50px;
 }
 
@@ -87,3 +89,12 @@ h3{
 }
 
 /* this code is to align the photo and make it smaller inbetween the paragraphs */
+.container{
+    display:grid;
+    text-align:center;
+}
+.photo{
+    width:250px;
+    height:auto;
+    display:inline-block;
+}
