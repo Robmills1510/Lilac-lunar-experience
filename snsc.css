@@ -10,5 +10,84 @@ body{
 }
 
 h1{
+    margin-top:50px;
     text-align: center;
+    font-family: "Ribeye Marrow", serif;
+    color:white;
+}
+
+.image{
+    margin-top:50px;
+    text-align: center;
+    top: 20px;
+}
+
+h3{
+    text-align: center;
+    font-family:"Ribeye Marrow", serif;
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+/* this code is for the navbar */
+/* the following code will all be for making the hamburger menu */
+.navbar {
+    position: relative;
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    position: fixed; /* Position fixed to stay in the top-right corner */
+    top: 40px; /* Adjust distance from the top */
+    right: 10px; /* Adjust distance from the right */
+    z-index: 1000; /* Ensure it's above other content */
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: fixed; /* Position fixed to stay in the top-right corner */
+    top: 50px; /* Position below the hamburger button */
+    right: 10px;
+    background: black; /* Optional: background color */
+    border: 1px solid black; /* Optional: border color */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: shadow for better visibility */
+    width: 200px; /* Adjust width as needed */
+}
+.nav-menu li {
+    padding: 10px;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block; /* Make links block-level for better clickability */
+}
+.menu-active .nav-menu {
+    display: block;
+}
+.menu-active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-active .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
