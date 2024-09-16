@@ -104,7 +104,6 @@ height: 100vh;
     border: 1px solid black; /* Optional: border color */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: shadow for better visibility */
     width: 200px; /* Adjust width as needed */
-    z-index: 999;
 }
 .nav-menu li {
     padding: 10px;
@@ -118,12 +117,6 @@ height: 100vh;
 .menu-active .nav-menu {
     display: block;
 }
-
-/* this code is so that when the menu is activated the arrow icon doesnt work */
-.menu-active .arrow-icon{
-    display: none;
-}
-
 .menu-active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -133,4 +126,3 @@ height: 100vh;
 .menu-active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
