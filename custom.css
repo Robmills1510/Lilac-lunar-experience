@@ -1,0 +1,99 @@
+body{
+    background-image: url(photos/unnamed\ \(3\).jpg);
+    background-position: center;
+    background-position: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+}
+
+h1{
+    margin-top:40px;
+    text-align:center;
+    color:white;
+    Font-family:"Ribeye Marrow", serif;
+}
+
+h3{
+    text-align:center;
+    color:white;
+    font-family:"Ribeye Marrow", serif;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.photo-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    max-width:100%;
+    justify-content:center;
+    align-items:center;
+}
+.photo-grid img{
+    width:60%;
+    height:auto;
+}
+
+/* the following code will all be for making the hamburger menu */
+.navbar {
+    position: relative;
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    position: fixed; /* Position fixed to stay in the top-right corner */
+    top: 40px; /* Adjust distance from the top */
+    right: 10px; /* Adjust distance from the right */
+    z-index: 1000; /* Ensure it's above other content */
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: fixed; /* Position fixed to stay in the top-right corner */
+    top: 50px; /* Position below the hamburger button */
+    right: 10px;
+    background: black; /* Optional: background color */
+    border: 1px solid black; /* Optional: border color */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: shadow for better visibility */
+    width: 200px; /* Adjust width as needed */
+}
+.nav-menu li {
+    padding: 10px;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block; /* Make links block-level for better clickability */
+}
+.menu-active .nav-menu {
+    display: block;
+}
+.menu-active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-active .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
