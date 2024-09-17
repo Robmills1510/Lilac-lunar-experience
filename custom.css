@@ -23,7 +23,12 @@ h3{
     margin-left: 80px;
     margin-right: 80px;
 }
-
+/* this code is for the <p> underneath the photos */
+p{
+    font-size:1.8rem;
+    font-family: "Ribeye Marrow", serif;
+    color: white;
+}
 .photo-grid{
     margin-top:50px;
     display:flex;
