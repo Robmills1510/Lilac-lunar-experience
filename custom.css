@@ -26,15 +26,14 @@ h3{
 
 .photo-grid{
     margin-top:50px;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:10px;
-    max-width:100%;
-    justify-content:center;
+    display:flex;
+    justify-content:space-around;
     align-items:center;
+    gap:20px;
+    max-width:100%;
 }
 .photo-grid img{
-    width:60%;
+    width:250px;
     height:auto;
 }
 
