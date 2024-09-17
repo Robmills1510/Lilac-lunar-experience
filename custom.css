@@ -37,6 +37,14 @@ p{
     gap:20px;
     max-width:100%;
 }
+/* this code is to get the image to hover */
+.img{
+    transition: transform 0.3s ease-in-out;
+}
+.img:hover{
+    transform: scale(1.10);
+}
+
 .photo-grid img{
     width:250px;
     height:auto;
